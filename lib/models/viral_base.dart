@@ -2,7 +2,7 @@ import 'package:hive/hive.dart';
 import 'antibody.dart';
 part 'viral_base.g.dart';
 
-@HiveType(typeId: 2)
+@HiveType(typeId: 9)
 class ViralBase {
   @HiveField(0)
   final String id;

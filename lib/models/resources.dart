@@ -1,7 +1,7 @@
 import 'package:hive/hive.dart';
 part 'resources.g.dart';
 
-@HiveType(typeId: 3)
+@HiveType(typeId: 7)
 class Resources {
   @HiveField(0)
   final int researchPoints;

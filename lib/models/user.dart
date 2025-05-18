@@ -3,7 +3,7 @@ import 'resources.dart';
 import 'antibody.dart';
 part 'user.g.dart';
 
-@HiveType(typeId: 4)
+@HiveType(typeId: 8)
 class User {
   @HiveField(0)
   final String uid;

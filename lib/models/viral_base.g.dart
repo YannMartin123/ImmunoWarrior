@@ -8,7 +8,7 @@ part of 'viral_base.dart';
 
 class ViralBaseAdapter extends TypeAdapter<ViralBase> {
   @override
-  final int typeId = 2;
+  final int typeId = 9;
 
   @override
   ViralBase read(BinaryReader reader) {

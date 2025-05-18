@@ -23,6 +23,7 @@ dependencies:
   path: ^1.8.3
   animated_text_kit: ^4.2.2
   cupertino_icons: ^1.0.8
+  package_info_plus: ^8.0.2
 
 dev_dependencies:
   flutter_test:
@@ -39,11 +40,13 @@ flutter_icons:
 flutter:
   uses-material-design: true
   # Uncomment and customize the following to add assets:
-  # assets:
-  #   - assets/images/
+  assets:
+    - assets/images/
   #   - assets/icons/
   #
-  # fonts:
-  #   - family: YourFont
-  #     fonts:
-  #       - asset: fonts/YourFont-Regular.ttf
+  fonts:
+    - family: Orbitron
+      fonts:
+        - asset: assets/fonts/Orbitron-Regular.ttf
+        - asset: assets/fonts/Orbitron-Bold.ttf
+          weight: 700

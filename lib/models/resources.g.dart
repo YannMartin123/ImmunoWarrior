@@ -8,7 +8,7 @@ part of 'resources.dart';
 
 class ResourcesAdapter extends TypeAdapter<Resources> {
   @override
-  final int typeId = 3;
+  final int typeId = 7;
 
   @override
   Resources read(BinaryReader reader) {
