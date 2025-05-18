@@ -1,44 +1,38 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'user.dart';
+part of 'memory.dart';
 
 // **************************************************************************
 // TypeAdapterGenerator
 // **************************************************************************
 
-class UserAdapter extends TypeAdapter<User> {
+class MemoireImmunitaireAdapter extends TypeAdapter<MemoireImmunitaire> {
   @override
-  final int typeId = 36;
+  final int typeId = 6;
 
   @override
-  User read(BinaryReader reader) {
+  MemoireImmunitaire read(BinaryReader reader) {
     final numOfFields = reader.readByte();
     final fields = <int, dynamic>{
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
-    return User(
-      uid: fields[0] as String,
-      username: fields[1] as String,
-      resources: fields[2] as Resources,
-      antibodies: (fields[3] as List).cast<Antibody>(),
-      researchState: (fields[4] as Map).cast<String, int>(),
+    return MemoireImmunitaire(
+      signaturesConnues: (fields[0] as List).cast<String>(),
+      bonusContrePathogenes: (fields[1] as Map).cast<String, double>(),
+      mutationsIgnorees: fields[2] as int,
     );
   }
 
   @override
-  void write(BinaryWriter writer, User obj) {
+  void write(BinaryWriter writer, MemoireImmunitaire obj) {
     writer
-      ..writeByte(5)
-      ..writeByte(0)
-      ..write(obj.uid)
-      ..writeByte(1)
-      ..write(obj.username)
-      ..writeByte(2)
-      ..write(obj.resources)
       ..writeByte(3)
-      ..write(obj.antibodies)
-      ..writeByte(4)
-      ..write(obj.researchState);
+      ..writeByte(0)
+      ..write(obj.signaturesConnues)
+      ..writeByte(1)
+      ..write(obj.bonusContrePathogenes)
+      ..writeByte(2)
+      ..write(obj.mutationsIgnorees);
   }
 
   @override
@@ -47,7 +41,7 @@ class UserAdapter extends TypeAdapter<User> {
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-      other is UserAdapter &&
+      other is MemoireImmunitaireAdapter &&
           runtimeType == other.runtimeType &&
           typeId == other.typeId;
 }
